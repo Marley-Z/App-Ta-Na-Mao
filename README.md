@@ -28,8 +28,11 @@ Principais conceitos utilizados:
 - Entities para representação das tabelas
 - RecyclerView para listagem dinâmica de dados
 
-
-
+Instalação e Execução:
+- Clone o repositório: git clone https://github.com/Marley-Z/App-Ta-Na-Mao
+- Abra o projeto no Android Studio
+- Aguarde o Gradle sincronizar
+- Execute o aplicativo em emulador ou dispositivo físico
 
 Autor:
 Kaique Marley Carbone
