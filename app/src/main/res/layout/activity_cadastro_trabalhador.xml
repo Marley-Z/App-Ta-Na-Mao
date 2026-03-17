@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E003E"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Nome"
+                    android:textColor="#000000"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CPF"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etCpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="CPF"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvCpfAviso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CPF inválido."
+                    android:textColor="#FF0000"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Email"
+                    android:textColor="#000000"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Senha"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="Senha"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvSenhaAviso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A senha deve ter pelo menos 6 caracteres."
+                    android:textColor="#FF0000"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirme sua Senha"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etConfirmarSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:hint="Confirmar Senha"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione um Serviço"
+                    android:textColor="#FFFFFF"/>
+
+                <Spinner
+                    android:id="@+id/spinnerCargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="#A45EE5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione seu Estado"
+                    android:textColor="#FFFFFF"/>
+
+                <Spinner
+                    android:id="@+id/spinnerEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="#A45EE5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quais Cidades Você Atua?"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etCidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Ex: Cachoeira Paulista, Lorena, Guará"
+                    android:textColor="#000000"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Idade"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etDataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Data de Nascimento"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Endereço"
+                    android:textColor="#000000"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telefone"
+                    android:textColor="#FFFFFF"/>
+
+                <EditText
+                    android:id="@+id/etTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Telefone"
+                    android:textColor="#000000"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvTelefoneAviso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telefone inválido."
+                    android:textColor="#FF0000"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:text="Salvar"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/roxo_padroao"
+                    android:padding="12dp"/>
+
+        </LinearLayout>
+</ScrollView>

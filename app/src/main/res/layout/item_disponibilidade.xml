@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2E003E">
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data: --/--/----"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora: --:--"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewFotoUsuario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_perfil"
+        android:clipToOutline="true"
+        android:src="@drawable/imagem_padrao"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvUsuarioReservou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponível"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E003E"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bem-vindo ao TÁ NA MÃO"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Instrução -->
+        <TextView
+            android:id="@+id/textInstrucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Por favor, insira seu email e senha para entrar."
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Campos de login -->
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/edittext_background"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etSenhaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/roxo_padroao"
+            android:text="Entrar"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp"
+            android:minHeight="48dp"
+            android:padding="12dp"/>
+
+        <!-- Texto acima do botão de cadastro de usuário -->
+        <TextView
+            android:id="@+id/textCadastroUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quer contratar um prestador de serviço conforme suas necessidades?"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCadastroUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fazer Cadastro como Usuário"
+            android:backgroundTint="@color/roxo_padroao"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Texto acima do botão de cadastro de trabalhador -->
+        <TextView
+            android:id="@+id/textCadastroTrabalhador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quer prestar um serviço?"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCadastroTrabalhador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fazer Cadastro como Trabalhador"
+            android:backgroundTint="@color/roxo_padroao"
+            android:textColor="@android:color/white"
+            android:minHeight="48dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>
